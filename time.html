@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- This calls in the style sheets and any dependancies.-->
+  <link rel="stylesheet" type="text/css" href="CSS/StyleSheet.css">
+  <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+  <script language="javascript" type="text/javascript" src="JavaScript/time.js">
+  </script>
+  <title>Toby's Time Coverter</title>
+</head>
+
+<body>
+	<div class="center">
+	<!-- The webpages title and subtitle <!-->
+  <h1 id="roundedcorners"> Toby's Converter Site for Assignments</h1>
+	<h2>Time Converter</h2>
+
+	<div class "navigation">
+    <div align="center">
+		<a href="weight.html"> Weight Converter</a>
+    <a href="index.html"> Speed Converter</a>
+    <a href="temperature.html"> Temperature Converter</a>
+    <a href="distance.html"> Distance Converter</a>
+	</div>
+
+  <div class="mainBody">
+		<br>
+		<p align="center"><b><u>Calculate how many seconds are in a certain amount of
+      minutes</u></b></p>
+		<br>
+		<p align="center">Seconds:</p>
+		<input type="number" name="seconds" id="seconds">
+		<br>
+		<br>
+		<button onclick="calcTime(document.getElementById('seconds').value)"> Calculate!</button>
+		<br>
+		<p id="conversionResult"><b><u>Conversion Result: </u></b></p>
+</div>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Defines the page title and calls all external javascript and style sheets-->
+	<title>Distance Converter</title>
+	<link rel="stylesheet" type="text/css" href="css/StyleSheet.css">
+	<link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+	<script language="javascript" type="text/javascript" src="JavaScript/distance.js"></script>
+	<!-- End of calls -->
+</head>
+<body>
+  <div class="center">
+
+	<!-- The webpages title and subtitle <!-->
+	<h1>Toby's Converter Site for Assignments</h1>
+	<h2>Distance Converter</h2>
+	<!-- Start of navigation bar -->
+  <div class "navigation">
+		<div class="center">
+    <a href="index.html"> Speed Converter</a>
+		<a href="time.html"> Convert the time here!</a>
+    <a href="temperature.html"> Temperature Converter</a>
+    <a href="weight.html">Weight Converter</a>
+  </div>
+  <!-- End of Navigation bar -->
+
+<div class = "mainBody">
+  <br>
+  <p align="center"><b><u>How long is...</u></b></p>
+  <br>
+  <p align="center">Miles: </p>
+  <input type="number" name="m" id="m">
+  <br>
+  <br>
+  <button onclick="calcDistance(document.getElementById('m').value)">Convert.</button>
+  <br>
+  <p id="conversionResult"><b><u>Kilometers: </u></b></p>
+</div>

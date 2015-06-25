@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-	<link rel="stylesheet" type="text/css" href="StyleSheet.css">
-	<title>Toby's Time Converter</title>
-
+	<!-- This calls in the style sheets and any dependancies.-->
+	<link rel="stylesheet" type="text/css" href="CSS/StyleSheet.css">
+	<link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+	<script language="javascript" type="text/javascript" src="JavaScript/speed.js"></script>
+	<title>Toby's  Converter's Assignment.</title>
 </head>
 
 <body>
+	<div class="center">
+	<!-- The webpages title and subtitle <!-->
+	<h1 id="roundedcorners"> Toby's  Site for Assignments</h1>
+	<h2>Speed Converter</h2>
 
-	<h1> Toby's Time Converter, for assignments.</h1>
+	<div class "navigation">
+		<div align="center">
+		<a href="weight.html"> Weight Converter</a>
+		<a href="time.html">Time Converter</a>
+		<a href="Distance.html"> Distance Converter</a>
+		<a href="temperature.html"> Temperature Converter</a>
+	</div>
 
+<!-- Navigation Bars ending !-->
+
+	<div class = "mainBody">
+		<br>
+		<p><b>Calculate MPS to MPH</b></p>
+		<br>
+		<p>Meters per second: </p>
+		<input type="number" name="mps" id="mps">
+		<br>
+		<br>
+		<button onclick="calcSpeed(document.getElementById('mps').value)">Convert.</button>
+		<br>
+		<p align="center">Miles per hour:</p>
+		<p id="conversionResult"><b><u>MPH: </u></b></p>
+	</div>
 </body>
+</html>

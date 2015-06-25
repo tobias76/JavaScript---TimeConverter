@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Defines the page title and calls all external javascript and style sheets-->
+	<title>Weight Converters</title>
+	<link rel="stylesheet" type="text/css" href="css/StyleSheet.css">
+	<link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+	<script language="javascript" type="text/javascript" src="JavaScript/weight.js"></script>
+</head>
+<body>
+  <div class="center">
+
+	<!-- The webpages title and subtitle <!-->
+	<h1>Toby's Converter Site for Assignments</h1>
+	<h2>Weight Converter</h2>
+
+	<!-- Navigation Bar starts! !-->
+  <div class "navigation">
+		<div align="center">
+    <a href="index.html">Speed Converter</a>
+		<a href="time.html">Time Converter</a>
+		<a href="temperature.html"> Temperature Converter</a>
+		<a href="distance.html"> Distance Converter</a>
+  </div>
+
+<div class = "mainBody">
+  <br>
+  <p align="center"><b><u>Convert your weight here.</u></b></p>
+  <br>
+  <p align="center">Kilograms: </p>
+  <input type="number" name="kg" id="kg">
+  <br>
+  <br>
+  <button onclick="calcWeight(document.getElementById('kg').value)">Convert.</button>
+  <br>
+  <p align="center">Stone:</p>
+  <p id="conversionResult"><b><u>Stone: </u></b></p>
+</div>
